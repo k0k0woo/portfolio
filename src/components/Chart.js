@@ -11,7 +11,7 @@ const Chart = () => {
     script.async = true;
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
     script.innerHTML = JSON.stringify({
-        width:"700",
+        width:"1500",
         height: "800",
         autosize: true,
         symbol: "NASDAQ:AAPL",
@@ -20,8 +20,12 @@ const Chart = () => {
         theme: "dark",
         style: "1",
         locale: "en",
+        "details": true,
         allow_symbol_change: true,
         calendar: false,
+        "studies": [
+            "STD;Supertrend"
+          ],
         support_host: "https://www.tradingview.com"
     });
 

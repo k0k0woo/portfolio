@@ -12,8 +12,8 @@ function StockHeatMap() {
       script.type = "text/javascript";
       script.async = true;
       script.innerHTML = JSON.stringify({
-        exchanges: ["NYSE"], // ✅ Specify stock exchanges
-        dataSource: "NASDAQ100", // ✅ S&P 500 data
+        exchanges: [], // ✅ Specify stock exchanges
+        dataSource: "SPYX500", // ✅ S&P 500 data
         grouping: "sector",
         blockSize: "market_cap_basic",
         blockColor: "change",
@@ -25,8 +25,8 @@ function StockHeatMap() {
         isZoomEnabled: true,
         hasSymbolTooltip: true,
         isMonoSize: false,
-        width: "100%",
-        height: "100%",
+        width: "400",
+        height: "500",
     });
       container.current.appendChild(script);
       scriptRef.current = script; // Store reference to prevent re-adding

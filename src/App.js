@@ -1,6 +1,6 @@
 import './App.css';
 import TickerBar from "./components/TickerBar"; 
-//import StockHeatmap from './components/StockHeatmap';
+import StockHeatmap from './components/StockHeatmap';
 import StockInfo from './components/StockInfo';
 import Financials from './components/Financials';
 import Technicals from './components/Technicals';
@@ -14,19 +14,21 @@ function App() {
       {/*<StockHeatmap/>*/}
 
       {/*stock info */}
+      {/*
       <div className='flex-row'>
         <div className='flex-column'>
         <StockInfo/>
         <Financials/>
         </div>        
         
-        <Chart/>
+
         
         <Technicals/>
 
       </div>
 
-
+        */}
+      <Chart/>
     </div>
   );
 }
