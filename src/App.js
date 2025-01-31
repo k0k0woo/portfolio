@@ -1,35 +1,20 @@
 import './App.css';
-import TickerBar from "./components/TickerBar"; 
-import StockHeatmap from './components/StockHeatmap';
-import StockInfo from './components/StockInfo';
-import Financials from './components/Financials';
-import Technicals from './components/Technicals';
-import Chart from './components/Chart';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Homepage"; // Your main page
+import ChartPage from "./pages/ChartPage"; // Your new Chart page
+import ValueCalculator from "./pages/ValueCalculator"; // Your new Chart page
+import NotFound from "./pages/NotFound"; // Optional: Handles unknown routes
+
 function App() {
   return (
-    <div className='App'>
-      {/* ticker bar */}
-      <TickerBar />
-      {/* heatmap */}
-      {/*<StockHeatmap/>*/}
-
-      {/*stock info */}
-      {/*
-      <div className='flex-row'>
-        <div className='flex-column'>
-        <StockInfo/>
-        <Financials/>
-        </div>        
-        
-
-        
-        <Technicals/>
-
-      </div>
-
-        */}
-      <Chart/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/chart" element={<ChartPage />} />
+        <Route path="/value" element={<ValueCalculator />} />
+        <Route path="*" element={<NotFound />} /> {/* 404 page */}
+      </Routes>
+    </Router>
   );
 }
 

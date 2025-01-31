@@ -12,7 +12,7 @@ const Chart = () => {
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
     script.innerHTML = JSON.stringify({
         width:"1500",
-        height: "800",
+        height: "750",
         autosize: true,
         symbol: "NASDAQ:AAPL",
         interval: "D",
