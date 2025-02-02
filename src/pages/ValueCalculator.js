@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import StockInfo from "../components/StockInfo";
-import Financials from "../components/Financials";
-import Technicals from "../components/Technicals";
-import TickerBar from "../components/TickerBar";
+import StockInfo from "../components/TradingView/StockInfo";
+import Financials from "../components/TradingView/Financials";
+import Technicals from "../components/TradingView/Technicals";
+import TickerBar from "../components/TradingView/TickerBar";
 
 const ValueCalculator = () => {
   return (

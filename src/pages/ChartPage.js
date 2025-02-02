@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TickerBar from "../components/TickerBar";
-import Chart from "../components/Chart";
+import TickerBar from "../components/TradingView/TickerBar";
+import Chart from "../components/TradingView/Chart";
 
 const ChartPage = () => {
   return (

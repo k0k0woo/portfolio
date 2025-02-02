@@ -12,9 +12,9 @@ const Finance = () => {
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js";
     script.innerHTML = JSON.stringify({
         interval: "1D",
-        width: "425",
-        isTransparent: false,
+        width: "425",        
         height: "800",
+        isTransparent: false,
         symbol: "NASDAQ:AAPL",
         showIntervalTabs: true,
         displayMode: "multiple",
